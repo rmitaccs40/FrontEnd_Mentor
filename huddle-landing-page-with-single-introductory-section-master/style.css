@@ -1,0 +1,88 @@
+
+/* the default value */
+:root{
+    --bg-color: hsl(257, 40%, 49%);
+    --font-color: #fff; 
+    --main-margin: 50px; 
+}
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'OpenSans', sans-serif;
+    border: none; 
+}
+
+body{
+    background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    /* adding the image background */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: var(--bg-color);
+}
+.content__title{
+    font-family: 'Poppin', sans-serif;
+    font-weight: 600;
+    font-size: 3rem; 
+    color: var( --font-color);
+}
+.content__description{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500; 
+    font-size: 1.2rem;
+    color: var( --font-color);
+} 
+.content__btn{
+    color: var(--font-color);
+}
+
+/* Above specify some basic idea of the page */
+
+/* the overall page CSS */
+.container{
+    display: flex; 
+    flex-direction: column; 
+    margin: var(--main-margin);
+    
+}
+/* the header logo CSS */
+.logo{
+    width: 200px; 
+    height: auto; 
+    margin-bottom: 50px; 
+}
+
+/* the main area of the page CSS */
+.content{
+    display: flex; 
+}
+    /* the right title and description */
+    .content__text{
+        margin: 50px;
+    }
+    .content__title{
+        padding-bottom: 25px;
+    }
+    /* adjust the button style */
+    .content__btn{
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: hsl(300, 69%, 71%);
+        font-family: 'OpenSans', sans-serif;
+        font-size: 1rem;
+        box-shadow: 0 0 5px 1px black;
+        margin-top: 25px;
+    }
+
+/* the footer of the page CSS */
+.connection{
+    display: flex; 
+    justify-content: flex-end; 
+    margin-right: 80px;
+}
+.connection--item{
+    font-style: none;
+    padding: 14px;
+    font-size: 30px;
+}
+
